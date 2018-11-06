@@ -79,721 +79,754 @@ source: a schema:CreativeWork ;
 			<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this>,
 			<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#this>,
 			<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> .
-    
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-LIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 Personal Edition License For Linux (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 2 cores, 4 threads)" ;
-		schema:category "personal" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-personal-WKS-LIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupPersonal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#retailPriceSpecification> ;
-		schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Personal Edition License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 199.99" ;
-		schema:price "199.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-MAC.png> ;
-		skos:prefLabel "Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 2 cores, 4 threads)" ;
-		schema:category "personal" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-personal-WKS-MAC" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupPersonal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#retailPriceSpecification> ;
-		schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 199.99" ;
-		schema:price "199.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-personal-WKS-WIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-personal-WKS-WIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-personal-WKS-WIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-WIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 2 cores, 4 threads)" ;
-		schema:category "personal" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-personal-WKS-WIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupPersonal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-personal-WKS-WIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-personal-WKS-WIN#retailPriceSpecification> ;
-		schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-personal-WKS-WIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-WIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-personal-WKS-WIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 199.99" ;
-		schema:price "199.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-LIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 4 cores, 5 threads)" ;
-		schema:category "appdeveloperproject" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-development-WKS-LIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupLateStage> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#retailPriceSpecification> ;
-		schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-LIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 1374.99" ;
-		schema:price "1374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-MAC.png> ;
-		skos:prefLabel "Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 4 cores, 5 threads)" ;
-		schema:category "appdeveloperproject" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-development-WKS-MAC" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupLateStage> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#retailPriceSpecification> ;
-		schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-MAC.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 1374.99" ;
-		schema:price "1374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-WIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 4 cores, 5 threads)" ;
-		schema:category "appdeveloperproject" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-development-WKS-WIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupLateStage> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#retailPriceSpecification> ;
-		schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-WIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 1374.99" ;
-		schema:price "1374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "2249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 Project Development License For Linux (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 5 threads)" ;
-		schema:category "appdeveloperworkgroup" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-project-WKS-LIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#retailPriceSpecification> ;
-		schema:price "2249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Project Development License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 4124.99" ;
-		schema:price "4124.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "2249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
-		skos:prefLabel "Virtuoso 8.2 Project Development License For macOS (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 5 threads)" ;
-		schema:category "appdeveloperworkgroup" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-project-WKS-MAC" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#retailPriceSpecification> ;
-		schema:price "2249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Project Development License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 4124.99" ;
-		schema:price "4124.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "2249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 Project Development License For Windows (Workstation) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 5 threads)" ;
-		schema:category "appdeveloperworkgroup" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-project-WKS-WIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#retailPriceSpecification> ;
-		schema:price "2249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Project Development License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 4124.99" ;
-		schema:price "4124.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "2999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 Workgroup Development License For Linux (Workstation or Server) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 5 threads)" ;
-		schema:category "appdeveloperworkgroup" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#retailPriceSpecification> ;
-		schema:price "2999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Workgroup Development License For Linux (Workstation or Server) Operating Systems -- Retail Offer Unit Price: 6186.99" ;
-		schema:price "6186.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "2999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
-		skos:prefLabel "Virtuoso 8.2 Workgroup Development License For macOS (Workstation or Server) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 5 threads)" ;
-		schema:category "appdeveloperworkgroup" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#retailPriceSpecification> ;
-		schema:price "2999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Workgroup Development License For macOS (Workstation or Server) Operating Systems -- Retail Offer Unit Price: 6186.99" ;
-		schema:price "6186.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "2999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 Workgroup Development License For Windows (Workstation or Server) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 5 threads)" ;
-		schema:category "appdeveloperworkgroup" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#retailPriceSpecification> ;
-		schema:price "2999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 Workgroup Development License For Windows (Workstation or Server) Operating Systems -- Retail Offer Unit Price: 6186.99" ;
-		schema:price "6186.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-LIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-LIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-LIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-LIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 System Integration License For Linux (Workstation or Server) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 10 threads)" ;
-		schema:category "appdeveloperdepartment" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-systems-integration-WKSSVR-LIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-LIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-LIN#retailPriceSpecification> ;
-		schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-LIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-LIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-LIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 System Integration License For Linux (Workstation or Server) Operating Systems -- Retail Offer Unit Price: 12374.99" ;
-		schema:price "12374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-MAC.png> ;
-		skos:prefLabel "Virtuoso 8.2 System Integration License For macOS (Workstation or Server) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 10 threads)" ;
-		schema:category "appdeveloperdepartment" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-systems-integration-WKSSVR-MAC" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#retailPriceSpecification> ;
-		schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-MAC.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 System Integration License For macOS (Workstation or Server) Operating Systems -- Retail Offer Unit Price: 12374.99" ;
-		schema:price "12374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-		schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-WIN> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#date> ;
-		schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-		schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-WIN#specialPriceSpecification> ;
-		schema:itemOffered <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-WIN#license> ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-WIN.png> ;
-		skos:prefLabel "Virtuoso 8.2 System Integration License For Windows (Workstation or Server) Operating Systems" ;
-		rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration License (expiring, 8 cores, 10 threads)" ;
-		schema:category "appdeveloperdepartment" ;
-		gr:businessFunction gr:Sell ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		offers:offerNumber "2018-11-virtuoso-82-systems-integration-WKSSVR-WIN" ;
-		offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-WIN#specialPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
-		offers:RetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-WIN#retailPriceSpecification> ;
-		schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-WIN#license> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
-		license:hasSessions "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:maxNetworkInstance "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
-		license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
-		license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
-		license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-		license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
-		schema:description """Concurrency enables flexible exploration and determination of optimal license.
-
-	All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
-
-	Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-		schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-WIN.png> ;
-		license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
-
-	<http://data.openlinksw.com/oplweb/offer/Offer-2011-11-virtuoso-82-systems-integration-WKSSVR-WIN#retailPriceSpecification> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
-		schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-		schema:name "Software License: Virtuoso 8.2 System Integration License For Windows (Workstation or Server) Operating Systems -- Retail Offer Unit Price: 12374.99" ;
-		schema:price "12374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+## Offers   
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-LIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-LIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-LIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	schema:category "personal" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-personal-WKS-LIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupPersonal> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-LIN-retail-price#this> ;
+	schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-LIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-LIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-LIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 199.99" ;
+	schema:price "199.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-MAC> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-MAC-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-MAC#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-MAC.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	schema:category "personal" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-personal-WKS-MAC" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupPersonal> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-MAC-retail-price#this> ;
+	schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-MAC#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-MAC.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-MAC-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 199.99" ;
+	schema:price "199.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-personal-WKS-WIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-WIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-WIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-WIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
+	schema:category "personal" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-personal-WKS-WIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupPersonal> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-WIN-retail-price#this> ;
+	schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-WIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-4CON-2CORE-WIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-personal-WKS-WIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems -- Retail Offer Unit Price: 199.99" ;
+	schema:price "199.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-LIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-LIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-LIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-LIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	schema:category "appdeveloperproject" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-development-WKS-LIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupLateStage> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-LIN-retail-price#this> ;
+	schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-LIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-LIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-LIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 1,374.99" ;
+	schema:price "1,374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-MAC> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-MAC-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-MAC#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-MAC.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	schema:category "appdeveloperproject" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-development-WKS-MAC" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupLateStage> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-MAC-retail-price#this> ;
+	schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-MAC#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-MAC.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-MAC-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 1,374.99" ;
+	schema:price "1,374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-development-WKS-WIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-WIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-WIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-WIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 4 cores, 5 threads)" ;
+	schema:category "appdeveloperproject" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-development-WKS-WIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupLateStage> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-WIN-retail-price#this> ;
+	schema:price "749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-WIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-4CORE-WIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-development-WKS-WIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems -- Retail Offer Unit Price: 1,374.99" ;
+	schema:price "1,374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-LIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "2,249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-LIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-LIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:category "appdeveloperworkgroup" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-project-WKS-LIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-LIN-retail-price#this> ;
+	schema:price "2,249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-LIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-LIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 4,124.99" ;
+	schema:price "4,124.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-MAC> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "2,249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-MAC-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-MAC#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:category "appdeveloperworkgroup" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-project-WKS-MAC" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-MAC-retail-price#this> ;
+	schema:price "2,249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-MAC#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-MAC-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 4,124.99" ;
+	schema:price "4,124.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-project-WKS-WIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "2,249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-WIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-WIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:category "appdeveloperworkgroup" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-project-WKS-WIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-WIN-retail-price#this> ;
+	schema:price "2,249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-WIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-project-WKS-WIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For WIndows (Workstation) Operating Systems -- Retail Offer Unit Price: 4,124.99" ;
+	schema:price "4,124.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "2,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:category "appdeveloperworkgroup" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN-retail-price#this> ;
+	schema:price "2,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-LIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 6,186.99" ;
+	schema:price "6,186.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "2,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:category "appdeveloperworkgroup" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC-retail-price#this> ;
+	schema:price "2,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-MAC.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 6,186.99" ;
+	schema:price "6,186.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "2,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 5 threads)" ;
+	schema:category "appdeveloperworkgroup" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupInitialDeployment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN-retail-price#this> ;
+	schema:price "2,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE-WIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 6,186.99" ;
+	schema:price "6,186.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-LIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "4,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-LIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-LIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	schema:category "appdeveloperdepartment" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-systems-integration-WKSSVR-LIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-LIN-retail-price#this> ;
+	schema:price "4,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#GenericLinux> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-LIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-LIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 12,374.99" ;
+	schema:price "12,374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "4,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-MAC-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-MAC.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	schema:category "appdeveloperdepartment" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-systems-integration-WKSSVR-MAC" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-MAC-retail-price#this> ;
+	schema:price "4,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#MacOSX> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-MAC.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-MAC-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 12,374.99" ;
+	schema:price "12,374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-WIN> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:price "4,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-WIN-special-price#this> ;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-WIN.png> ;
+	skos:prefLabel "Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems" ;
+	rdfs:comment "Software License Offer: Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
+	schema:category "appdeveloperdepartment" ;
+	gr:businessFunction gr:Sell ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	offers:offerNumber "2018-11-virtuoso-82-systems-integration-WKSSVR-WIN" ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-WIN-retail-price#this> ;
+	schema:price "4,999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
+
+<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> a schema:Product , license:ProductLicense , license:Virtuoso8License ;
+	license:hasSessions "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasMaximumProcessorCores "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:maxNetworkInstance "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	license:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> ;
+	license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	license:hasOperatingSystemFamily <http://www.openlinksw.com/ontology/software#Windows> ;
+	schema:description """Concurrency enables flexible exploration and determination of optimal license.
+
+All modules that distinguish the Enterprise Edition from the Open Source Edition are enabled.
+
+Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-8CORE-WIN.png> ;
+	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2018-11-virtuoso-82-systems-integration-WKSSVR-WIN-retail-price#this> a schema:UnitPriceSpecificiation , offers:Virtuoso8Pricing , offers:Virtuoso8RetailPricing ;
+	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:name "Software License : Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 12,374.99" ;
+	schema:price "12,374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	schema:priceCurrency "USD" .
