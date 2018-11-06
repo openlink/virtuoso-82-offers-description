@@ -1,0 +1,757 @@
+@prefix cvocab:  <http://open-services.net/ns/core#> .
+@prefix sioc:    <http://rdfs.org/sioc/ns#> .
+@prefix oplweb:  <http://www.openlinksw.com/schemas/oplweb#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:      <http://purl.org/goodrelations/v1#> .
+@prefix siocs:   <http://rdfs.org/sioc/services#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:    <http://www.w3.org/2007/05/powder-s#> .
+@prefix prodont: <http://www.productontology.org/id/> .
+@prefix xhv:     <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oplofr:  <http://www.openlinksw.com/ontology/offers#> .
+@prefix cc:      <http://creativecommons.org/ns#> .
+@prefix schema:  <http://schema.org/> .
+@prefix :        <http://www.openlinksw.com/DAV/data/turtle/offers.ttl#> .
+@prefix source:      <hhttp://www.openlinksw.com/data/turtle/offers.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/offers.ttl> .
+
+ sourceDAV:
+    a schema:CreativeWork ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    cc:attributionName "OpenLink Software" ;
+    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+    schema:datePublished "2017-10-02T12:38:25-00:00"^^xsd:dateTime ;
+    schema:dateCreated "2017-09-26T12:38:25-00:00"^^xsd:dateTime ;
+    schema:dateModified "2018-11-07T17:21:00-05:00"^^xsd:dateTime;
+    schema:name "Virtuoso Offers Ontology Description Document -- WebDAV Hosted" ;
+    schema:comment  """This document is a launch point for discovering routes to various information sources associated with product and services offers.  """;
+    owl:sameAs source: .
+
+source: a schema:CreativeWork ;
+   schema:name "Virtuoso Offers Ontology Description Document " ;
+   schema:comment  """This is a turtle document that uses Linked Data oriented content to describe terms from our product and services offers ontology """^^xsd:string  ;
+   schema:author <http://www.openlinksw.com/#this> ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2017-10-02T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateCreated "2017-09-26T12:38:25-00:00"^^xsd:dateTime ;
+   schema:dateModified "2018-11-07T17:21:00-05:00"^^xsd:dateTime;
+   schema:about  <http://www.openlinksw.com/ontology/offers#> . 
+
+<http://virtuoso.openlinksw.com/offers/> xhv:related <http://uda.openlinksw.com/offers/> .
+<http://uda.openlinksw.com/offers/> xhv:related <http://virtuoso.openlinksw.com/offers/> .
+
+xhv:related owl:equivalentProperty rdfs:seeAlso .
+
+foaf:primaryTopic owl:inverseOf xhv:describedby , wdrs:describedby .
+
+wdrs:describedby owl:equivalentProperty xhv:describedby .
+
+rdfs:subClassOf a owl:TransitiveProperty .
+
+#wdrs:describedby <http://www.openlinksw.com/data/turtle/offers.ttl> , <http://www.openlinksw.com/DAV/data/turtle/offers.ttl>  ;
+
+<http://www.openlinksw.com/ontology/offers#> a owl:Ontology ;
+  rdfs:label """OpenLink Product Offers Ontology"""^^xsd:string ;
+  rdfs:comment """Ontology that defines entity and relation types used to describe product offers. Examples include offer
+  numbers,currency, offers types etc."""@en ;
+  wdrs:describedby <http://www.openlinksw.com/ontology/offers> ;
+  dcterms:created "2014-05-18T13:00:00-05:00"^^xsd:dateTime ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  dcterms:modified "2015-03-20T13:38:00-05:00"^^xsd:dateTime ;
+  owl:versionInfo "3.2.0"^^xsd:string ;
+  owl:imports <http://purl.org/goodrelations/v1> ,
+              <http://www.w3.org/2002/07/owl#> ,
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ,
+              <http://purl.org/dc/terms/> ;
+  <http://open.vocab.org/terms/defines>
+              oplofr:offerNumber ,
+              oplofr:priceSpecificationOf ,
+              oplofr:Currency ,
+              oplofr:hasCurrency ,
+              oplofr:currencySymbol ,
+              oplofr:hasISOCode ,
+              oplofr:OfferGroup ,
+              oplofr:isMemberOf ,
+              oplofr:hasMember ,
+              oplofr:hasBuyAction ,
+              oplofr:isBuyActionOf ,
+              oplofr:hasMaxPurchaseCount ,
+              oplofr:VirtuosoOffer ,
+              oplofr:VirtuosoSpecialOffer ,
+              oplofr:VirtuosoBasicOffer  ,
+              oplofr:Virtuoso6Offer ,
+              oplofr:Virtuoso6SpecialOffer ,
+              oplofr:Virtuoso6BasicOffer ,
+              oplofr:Virtuoso7Offer ,
+              oplofr:Virtuoso7SpecialOffer ,
+              oplofr:Virtuoso7ClientAccessOffer ,
+              oplofr:VirtuosoClientAccessOffer ,
+              oplofr:Virtuoso7SubscriptionOffer ,
+              oplofr:VirtuosoSubscriptionOffer ,
+              oplofr:Virtuoso7BasicOffer ,
+              oplofr:Virtuoso8Offer ,
+              oplofr:Virtuoso8BasicOffer ,
+              oplofr:Virtuoso8SpecialOffer ,
+              oplofr:Virtuoso8ClientAccessOffer ,
+              oplofr:Virtuoso8SubscriptionOffer ,
+              oplofr:Virtuoso8Pricing ,
+              oplofr:Virtuoso8SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso8RetailUnitPriceSpecification ,
+              oplofr:VirtuosoPricing ,
+              oplofr:VirtuosoSpecialUnitPriceSpecification ,
+              oplofr:VirtuosoRetailUnitPriceSpecification ,
+              oplofr:Virtuoso6Pricing ,
+              oplofr:Virtuoso6SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso6RetailUnitPriceSpecification ,
+              oplofr:Virtuoso7Pricing ,
+              oplofr:Virtuoso7SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso7RetailUnitPriceSpecification ,
+              oplofr:retailPriceSpecificationOf ,
+              oplofr:hasRetailPriceSpecification ,
+              oplofr:UDAEnterpriseOffer ,
+              oplofr:UDAExpressOffer ,
+              oplofr:UDALiteOffer ,
+              oplofr:UDAPricing ,
+              oplofr:SingleTierPricing ,
+              oplofr:MultiTierPricing ,
+              oplofr:UDASpecialEnterpriseOffer ,
+              oplofr:UDABasicEnterpriseOffer ,
+              oplofr:UDASpecialExpressOffer ,
+              oplofr:UDABasicExpressOffer ,
+              oplofr:UDASpecialLiteOffer ,
+              oplofr:UDABasicLiteOffer ,
+              oplofr:SpecialUnitPriceSpecification ,
+              oplofr:UDASTSpecialUnitPriceSpecification ,
+              oplofr:UDAMTSpecialUnitPriceSpecification ,
+              oplofr:RetailUnitPriceSpecification ,
+              oplofr:UDASTRetailUnitPriceSpecification ,
+              oplofr:UDAMTRetailUnitPriceSpecification ,
+              oplofr:BundleOffer ,
+              oplofr:BundleOfferSingleTier ,
+              oplofr:BundleOfferSingleTierLite ,
+              oplofr:BundleOfferSingleTierExpress ,
+              oplofr:BundleOfferMultiTier ;
+  schema:about
+              oplofr:offerNumber ,
+              oplofr:priceSpecificationOf ,
+              oplofr:Currency ,
+              oplofr:hasCurrency ,
+              oplofr:currencySymbol ,
+              oplofr:hasISOCode ,
+              oplofr:OfferGroup ,
+              oplofr:isMemberOf ,
+              oplofr:hasMember ,
+              oplofr:hasBuyAction ,
+              oplofr:isBuyActionOf ,
+              oplofr:hasMaxPurchaseCount ,
+              oplofr:VirtuosoOffer ,
+              oplofr:VirtuosoSpecialOffer ,
+              oplofr:VirtuosoBasicOffer  ,
+              oplofr:Virtuoso6Offer ,
+              oplofr:Virtuoso6SpecialOffer ,
+              oplofr:Virtuoso6BasicOffer ,
+              oplofr:Virtuoso7Offer ,
+              oplofr:Virtuoso7SpecialOffer ,
+              oplofr:Virtuoso7ClientAccessOffer ,
+              oplofr:VirtuosoClientAccessOffer ,
+              oplofr:Virtuoso7SubscriptionOffer ,
+              oplofr:VirtuosoSubscriptionOffer ,
+              oplofr:Virtuoso7BasicOffer ,
+              oplofr:Virtuoso8Offer ,
+              oplofr:Virtuoso8BasicOffer ,
+              oplofr:Virtuoso8SpecialOffer ,
+              oplofr:Virtuoso8ClientAccessOffer ,
+              oplofr:Virtuoso8SubscriptionOffer ,
+              oplofr:Virtuoso8Pricing ,
+              oplofr:Virtuoso8SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso8RetailUnitPriceSpecification ,
+              oplofr:VirtuosoPricing ,
+              oplofr:VirtuosoSpecialUnitPriceSpecification ,
+              oplofr:VirtuosoRetailUnitPriceSpecification ,
+              oplofr:Virtuoso6Pricing ,
+              oplofr:Virtuoso6SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso6RetailUnitPriceSpecification ,
+              oplofr:Virtuoso7Pricing ,
+              oplofr:Virtuoso7SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso7RetailUnitPriceSpecification ,
+              oplofr:retailPriceSpecificationOf ,
+              oplofr:hasRetailPriceSpecification ,
+              oplofr:UDAEnterpriseOffer ,
+              oplofr:UDAExpressOffer ,
+              oplofr:UDALiteOffer ,
+              oplofr:UDAPricing ,
+              oplofr:SingleTierPricing ,
+              oplofr:MultiTierPricing ,
+              oplofr:UDASpecialEnterpriseOffer ,
+              oplofr:UDABasicEnterpriseOffer ,
+              oplofr:UDASpecialExpressOffer ,
+              oplofr:UDABasicExpressOffer ,
+              oplofr:UDASpecialLiteOffer ,
+              oplofr:UDABasicLiteOffer ,
+              oplofr:SpecialUnitPriceSpecification ,
+              oplofr:UDASTSpecialUnitPriceSpecification ,
+              oplofr:UDAMTSpecialUnitPriceSpecification ,
+              oplofr:RetailUnitPriceSpecification ,
+              oplofr:UDASTRetailUnitPriceSpecification ,
+              oplofr:UDAMTRetailUnitPriceSpecification ,
+              oplofr:BundleOffer ,
+              oplofr:BundleOfferSingleTier ,
+              oplofr:BundleOfferSingleTierLite ,
+              oplofr:BundleOfferSingleTierExpress ,
+              oplofr:BundleOfferMultiTier .
+
+<http://open.vocab.org/terms/defines> owl:inverseOf <http://www.w3.org/2007/05/powder-s#describedby> .
+
+<http://www.openlinksw.com/DAV/data/turtle/offers.ttl>
+  a foaf:Document ;
+  rdfs:label """OpenLink Product Offers Ontology Description Document (Turtle)"""^^xsd:string ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  rdfs:comment """This is a turtle document that uses Linked Data oriented content to describe an OpenLink ontology for Offers."""@en ;
+  xhv:canonical <http://www.openlinksw.com/ontology/offers> ;
+  dcterms:created "2014-05-18T13:00:00-05:00"^^xsd:dateTime ;
+  dcterms:modified "2015-03-20T13:38:00-05:00"^^xsd:dateTime ;
+  foaf:primaryTopic <http://www.openlinksw.com/ontology/offers#> ;
+  xhv:describes <http://www.openlinksw.com/ontology/offers#> ;
+  schema:about <http://www.openlinksw.com/ontology/offers#> ;
+  dcterms:subject <http://www.openlinksw.com/ontology/offers#> .
+
+<http://www.openlinksw.com/data/turtle/offers.ttl>
+  a foaf:Document ;
+  rdfs:label """OpenLink Product Offers Ontology Description Document (Turtle)"""^^xsd:string ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  rdfs:comment """This is a turtle document that uses Linked Data oriented content to describe OpenLink Product Offers Ontology."""@en ;
+  foaf:primaryTopic <http://www.openlinksw.com/ontology/offers#> ;
+  dcterms:created "2014-05-18T13:00:00-05:00"^^xsd:dateTime ;
+  dcterms:modified "2015-03-20T13:38:00-05:00"^^xsd:dateTime ;
+  xhv:describes <http://www.openlinksw.com/ontology/offers#> ;
+  schema:about <http://www.openlinksw.com/ontology/offers#> ;
+  xhv:canonical <http://www.openlinksw.com/ontology/offers> ;
+  dcterms:subject <http://www.openlinksw.com/ontology/offers#> .
+
+<http://www.openlinksw.com/ontology/offers>
+  a foaf:Document ;
+  rdfs:label """OpenLink Product Offers Ontology Description Document"""^^xsd:string ;
+  cc:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
+  dcterms:created "2014-05-18T13:00:00-05:00"^^xsd:dateTime ;
+  dcterms:modified "2015-03-20T13:38:00-05:00"^^xsd:dateTime ;
+  schema:creator <http://www.openlinksw.com/#this> ;
+  rdfs:comment """This is a document that uses Linked Data oriented content to describe OpenLink Product Offers Ontology."""@en ;
+  dcterms:subject <http://www.openlinksw.com/ontology/offers#> ;
+  foaf:primaryTopic <http://www.openlinksw.com/ontology/offers#> ;
+  foaf:topic  oplofr:offerNumber ,
+              oplofr:priceSpecificationOf ,
+              oplofr:Currency ,
+              oplofr:hasCurrency ,
+              oplofr:currencySymbol ,
+              oplofr:hasISOCode ,
+              oplofr:OfferGroup ,
+              oplofr:isMemberOf ,
+              oplofr:hasMember ,
+              oplofr:hasBuyAction ,
+              oplofr:isBuyActionOf ,
+              oplofr:hasMaxPurchaseCount ,
+              oplofr:VirtuosoOffer ,
+              oplofr:VirtuosoSpecialOffer ,
+              oplofr:VirtuosoBasicOffer  ,
+              oplofr:Virtuoso6Offer ,
+              oplofr:Virtuoso6SpecialOffer ,
+              oplofr:Virtuoso6BasicOffer ,
+              oplofr:Virtuoso7Offer ,
+              oplofr:Virtuoso7SpecialOffer ,
+              oplofr:Virtuoso7ClientAccessOffer ,
+              oplofr:VirtuosoClientAccessOffer ,
+              oplofr:Virtuoso7SubscriptionOffer ,
+              oplofr:VirtuosoSubscriptionOffer ,
+              oplofr:Virtuoso7BasicOffer ,
+              oplofr:Virtuoso8Offer ,
+              oplofr:Virtuoso8BasicOffer ,
+              oplofr:Virtuoso8SpecialOffer ,
+              oplofr:Virtuoso8ClientAccessOffer ,
+              oplofr:Virtuoso8SubscriptionOffer ,
+              oplofr:Virtuoso8Pricing ,
+              oplofr:Virtuoso8SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso8RetailUnitPriceSpecification ,
+              oplofr:VirtuosoPricing ,
+              oplofr:VirtuosoSpecialUnitPriceSpecification ,
+              oplofr:VirtuosoRetailUnitPriceSpecification ,
+              oplofr:Virtuoso6Pricing ,
+              oplofr:Virtuoso6SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso6RetailUnitPriceSpecification ,
+              oplofr:Virtuoso7Pricing ,
+              oplofr:Virtuoso7SpecialUnitPriceSpecification ,
+              oplofr:Virtuoso7RetailUnitPriceSpecification ,
+              oplofr:retailPriceSpecificationOf ,
+              oplofr:hasRetailPriceSpecification ,
+              oplofr:UDAEnterpriseOffer ,
+              oplofr:UDAExpressOffer ,
+              oplofr:UDALiteOffer ,
+              oplofr:UDAPricing ,
+              oplofr:SingleTierPricing ,
+              oplofr:MultiTierPricing ,
+              oplofr:UDASpecialEnterpriseOffer ,
+              oplofr:UDABasicEnterpriseOffer ,
+              oplofr:UDASpecialExpressOffer ,
+              oplofr:UDABasicExpressOffer ,
+              oplofr:UDASpecialLiteOffer ,
+              oplofr:UDABasicLiteOffer ,
+              oplofr:SpecialUnitPriceSpecification ,
+              oplofr:UDASTSpecialUnitPriceSpecification ,
+              oplofr:UDAMTSpecialUnitPriceSpecification ,
+              oplofr:RetailUnitPriceSpecification ,
+              oplofr:UDASTRetailUnitPriceSpecification ,
+              oplofr:UDAMTRetailUnitPriceSpecification ,
+              oplofr:BundleOffer ,
+              oplofr:BundleOfferSingleTier ,
+              oplofr:BundleOfferSingleTierLite ,
+              oplofr:BundleOfferSingleTierExpress ,
+              oplofr:BundleOfferMultiTier .
+
+<http://www.openlinksw.com/data/turtle/offers.ttl>
+  rdfs:seeAlso <http://virtuoso.openlinksw.com/offers/> ,
+               <http://uda.openlinksw.com/offers/> ,
+               <http://www.openlinksw.com/data/turtle/shop.ttl> ,
+               <http://www.openlinksw.com/data/turtle/offers.ttl> ,
+               <http://www.openlinksw.com/data/turtle/contracts.ttl> ,
+               <http://www.openlinksw.com/data/turtle/products.ttl> ,
+               <http://www.openlinksw.com/data/turtle/purchases.ttl> ,
+               <http://www.openlinksw.com/data/turtle/software.ttl> ,
+               <http://www.openlinksw.com/data/turtle/machines.ttl> ,
+               <http://www.openlinksw.com/data/turtle/vendors.ttl> ,
+               <http://www.openlinksw.com/data/turtle/payments.ttl> ,
+               <http://www.openlinksw.com/data/turtle/features.ttl> ,
+               <http://www.openlinksw.com/data/turtle/licenses.ttl> .
+
+
+# <-------------- Offers --------------> #
+
+# <-------------- Offers Classes --------------> #
+
+
+oplofr:VirtuosoOffer a owl:Class ;
+      rdfs:subClassOf schema:Offer ;
+      rdfs:label "Virtuoso Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:VirtuosoSpecialOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoOffer ;
+      rdfs:comment "Virtuoso Special Offer which contains two price specifications -- the Retail and Sale prices"@en ;
+      rdfs:label "Virtuoso Special Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:VirtuosoBasicOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoOffer ;
+      rdfs:label "Virtuoso Basic Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso Basic Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso6Offer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoOffer ;
+      rdfs:label "Virtuoso 6 Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso6SpecialOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoSpecialOffer ;
+      rdfs:comment "Virtuoso 6 Special Offer which contains two price specifications -- the Retail and Sale prices"@en ;
+      rdfs:label "Virtuoso 6 Special Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso6BasicOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoBasicOffer ;
+      rdfs:label "Virtuoso 6 Basic Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso 6 Basic Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso7Offer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoOffer ;
+      rdfs:label "Virtuoso 7 Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso7SpecialOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoSpecialOffer ;
+      rdfs:comment "Virtuoso 7 Special Offer which contains two price specifications -- the Retail and Sale prices"@en ;
+      rdfs:label "Virtuoso 7 Special Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso7ClientAccessOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoClientAccessOffer ;
+      rdfs:label "Virtuoso 7 Client Access Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso 7 Client Access Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:VirtuosoClientAccessOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoOffer ;
+      rdfs:label "Virtuoso Client Access Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso Client Access Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso7SubscriptionOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoSubscriptionOffer ;
+      rdfs:label "Virtuoso 7 Subscription Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso 7 Subscription Offer"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:VirtuosoSubscriptionOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoOffer ;
+      rdfs:label "Virtuoso Subscription Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso Subscription Offer"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso7BasicOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoBasicOffer ;
+      rdfs:label "Virtuoso 7 Basic Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso 7 Basic Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDAEnterpriseOffer a owl:Class ;
+      rdfs:subClassOf schema:Offer ;
+      rdfs:label "UDA (Multi-Tier Enterprise Edition) Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDASpecialEnterpriseOffer a owl:Class ;
+      rdfs:subClassOf oplofr:UDAEnterpriseOffer ;
+      rdfs:comment "UDA Special Enterprise Offer which contains two price specifications -- the Retail and Sale prices"@en ;
+      rdfs:label "UDA Special (Multi-Tier Enterprise Edition) Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDABasicEnterpriseOffer a owl:Class ;
+      rdfs:subClassOf oplofr:UDAEnterpriseOffer ;
+      rdfs:label "UDA Basic (Multi-Tier Enterprise Edition) Offer"^^xsd:string ;
+      rdfs:comment "UDA Basic Enterprise Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDAExpressOffer a owl:Class ;
+      rdfs:subClassOf schema:Offer ;
+      rdfs:label "UDA (Single-Tier Express Edition) Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDASpecialExpressOffer a owl:Class ;
+      rdfs:subClassOf oplofr:UDAExpressOffer ;
+      rdfs:comment "UDA Special Express Offer which contains two price specifications -- the Retail and Sale prices"@en ;
+      rdfs:label "UDA Special (Single-Tier Express Edition) Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDABasicExpressOffer a owl:Class ;
+      rdfs:subClassOf oplofr:UDAExpressOffer ;
+      rdfs:label "UDA Basic (Single-Tier Express Edition) Offer"^^xsd:string ;
+      rdfs:comment "UDA Basic Express Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDALiteOffer a owl:Class ;
+      rdfs:subClassOf schema:Offer ;
+      rdfs:label "UDA (Single-Tier Lite Edition) Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+
+oplofr:UDASpecialLiteOffer a owl:Class ;
+      rdfs:subClassOf oplofr:UDALiteOffer ;
+      rdfs:comment "UDA Special Lite Offer which contains two price specifications -- the Retail and Sale prices"@en ;
+      rdfs:label "UDA Special (Single-Tier Lite Edition) Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDABasicLiteOffer a owl:Class ;
+      rdfs:subClassOf oplofr:UDALiteOffer ;
+      rdfs:label "UDA Basic (Single-Tier Lite Edition) Offer"^^xsd:string ;
+      rdfs:comment "UDA Basic Lite Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:OfferGroup a owl:Class ;
+      rdfs:label "Offer Group" ;
+      rdfs:comment "A set of Offers for better overview usage."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+# <-------------- Offers Properties --------------> #
+
+oplofr:offerNumber
+      a owl:DatatypeProperty, rdf:Property ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:label "offerNumber"^^xsd:string ;
+      skos:altLabel "Offer Code"^^xsd:string ;
+      rdfs:domain schema:Offer ;
+      rdfs:range xsd:string .
+
+oplofr:priceSpecificationOf
+      a owl:ObjectProperty, rdf:Property ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:label "priceSpecificationOf"^^xsd:string ;
+      skos:altLabel "Price Specification Of"^^xsd:string ;
+      rdfs:domain gr:UnitPriceSpecification ;
+      rdfs:range schema:Offer ;
+      owl:inverseOf gr:hasPriceSpecification .
+
+oplofr:isMemberOf a owl:ObjectProperty, rdf:Property ;
+      rdfs:label "isMemberof"^^xsd:string ;
+      skos:altLabel "Is Member of"^^xsd:string ;
+      rdfs:comment """Associates an Offer with a Group."""@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:domain schema:Offer ;
+      rdfs:range oplofr:OfferGroup ;
+      owl:inverseOf oplofr:hasMember .
+
+oplofr:hasBuyAction a owl:ObjectProperty, rdf:Property ;
+      rdfs:label "hasBuyAction"^^xsd:string ;
+      skos:altLabel "Offer Buy Action"^^xsd:string ;
+      rdfs:comment """Associates a Buy Action with an Offer."""@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:domain gr:Offering , schema:Offer;
+      rdfs:range schema:Action ;
+      owl:inverseOf oplofr:isBuyActionOf .
+
+oplofr:isBuyActionOf a owl:ObjectProperty, rdf:Property ;
+      rdfs:label "isBuyActionOf"^^xsd:string ;
+      skos:altLabel "Is Buy Action of"^^xsd:string ;
+      rdfs:comment """Associates an Offer with a Buy Action."""@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:domain schema:Action ;
+      rdfs:range gr:Offering , schema:Offer ;
+      owl:inverseOf oplofr:hasBuyAction .
+
+oplofr:hasMember a owl:ObjectProperty, rdf:Property ;
+      rdfs:label "hasMember"^^xsd:string ;
+      skos:altLabel "Member"^^xsd:string ;
+      rdfs:comment """Associates a Group with an Offer."""@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:domain oplofr:OfferGroup ;
+      rdfs:range  schema:Offer ;
+      owl:inverseOf oplofr:isMemberOf .
+
+oplofr:hasMaxPurchaseCount
+      a owl:DatatypeProperty, rdf:Property ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:label "maxPurchaseCount"^^xsd:string ;
+      skos:altLabel "Max Purchase Count"^^xsd:string ;
+      rdfs:comment "The maximum number of times a single customer is allowed to purchase one offer. This is typically used for free offers."@en ;
+      rdfs:domain schema:Offer ;
+      rdfs:range xsd:integer .
+
+# <-------------- Currency --------------> #
+
+# <-------------- Currency Classes --------------> #
+
+oplofr:Currency a owl:Class ;
+          rdfs:label "Currency"^^xsd:string ;
+          rdfs:comment """Currency Class for handling composite of Currency, Country Codes, Currency Symbols."""@en ;
+          owl:equivalentClass <http://sw.opencyc.org/concept/Mx4rvVjMQpwpEbGdrcN5Y29ycA> ;
+          rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+# <-------------- Currency Properties --------------> #
+
+oplofr:hasCurrency a owl:ObjectProperty, rdf:Property ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:label "hasCurrency"^^xsd:string ;
+      skos:altLabel "Currency"^^xsd:string ;
+      rdfs:domain gr:UnitPriceSpecification ;
+      rdfs:range oplofr:Currency .
+
+# e.g., $
+oplofr:currencySymbol a owl:DatatypeProperty , rdf:Property ;
+      rdfs:label "currencySymbol"^^xsd:string ;
+      skos:altLabel "Currency Symbol"^^xsd:string ;
+      rdfs:comment """This relation has a currency symbol character as its object"""@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:domain oplofr:Currency ;
+      rdfs:range xsd:string .
+
+oplofr:hasISOCode a owl:ObjectProperty , rdf:Property ;
+      rdfs:label "ISO Code"^^xsd:string ;
+      skos:altLabel "hasISOCode"^^xsd:string ;
+      rdfs:comment """The object of this relation is an ISO country code"""@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:domain oplofr:Currency ;
+      rdfs:range xsd:string .
+
+
+# <-------------- Offers Prices --------------> #
+
+# <-------------- Offers Prices Classes --------------> #
+
+oplofr:UDAPricing a owl:Class ;
+      rdfs:subClassOf gr:UnitPriceSpecification ;
+      rdfs:label "UDA Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:SingleTierPricing a owl:Class ;
+      rdfs:subClassOf oplofr:UDAPricing ;
+      rdfs:label "UDA Single Tier Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:MultiTierPricing a owl:Class ;
+      rdfs:subClassOf oplofr:UDAPricing ;
+      rdfs:label "UDA Multi Tier Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:SpecialUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf gr:UnitPriceSpecification ;
+      rdfs:label "Special Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDASTSpecialUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:SpecialUnitPriceSpecification ;
+      rdfs:label "UDA Single-Tier Special Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDAMTSpecialUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:SpecialUnitPriceSpecification ;
+      rdfs:label "UDA Multi-Tier Special Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:RetailUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf gr:UnitPriceSpecification ;
+      rdfs:label "Retail Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDASTRetailUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:RetailUnitPriceSpecification ;
+      rdfs:label "UDA Single-Tier Retail Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:UDAMTRetailUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:RetailUnitPriceSpecification ;
+      rdfs:label "UDA Multi-Tier Retail Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:VirtuosoPricing a owl:Class ;
+      rdfs:subClassOf gr:UnitPriceSpecification ;
+      rdfs:label "Virtuoso Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:VirtuosoRetailUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:RetailUnitPriceSpecification ;
+      rdfs:label "Virtuoso Retail Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:VirtuosoSpecialUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:SpecialUnitPriceSpecification ;
+      rdfs:label "Virtuoso Special Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso6Pricing a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoPricing ;
+      rdfs:label "Virtuoso 6 Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso6RetailUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoRetailUnitPriceSpecification ;
+      rdfs:label "Virtuoso 6 Retail Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso6SpecialUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoSpecialUnitPriceSpecification ;
+      rdfs:label "Virtuoso 6 Special Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso7Pricing a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoPricing ;
+      rdfs:label "Virtuoso 7 Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso7RetailUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoRetailUnitPriceSpecification ;
+      rdfs:label "Virtuoso 7 Retail Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso7SpecialUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoSpecialUnitPriceSpecification ;
+      rdfs:label "Virtuoso 7 Special Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:retailPriceSpecificationOf
+      a rdf:Property, owl:ObjectProperty ;
+      skos:altLabel "Retail Price Specification Of"^^xsd:string ;
+      rdfs:label "retailPriceSpecificationOf"^^xsd:string ;
+      rdfs:comment """Relation that associates a special price with its retail price counterpart. This is typically used for situations where retail and special pricing need to be placed side by side for easy comparison. """@en ;
+      owl:inverseOf oplofr:hasRetailPriceSpecification ;
+      rdfs:domain gr:UnitPriceSpecification ;
+      rdfs:range gr:UnitPriceSpecification .
+
+oplofr:hasRetailPriceSpecification
+      a rdf:Property, owl:ObjectProperty ;
+      rdfs:label "hasRetailPriceSpecification"^^xsd:string ;
+      skos:altLabel "Retail Price Specification"^^xsd:string ;
+      rdfs:comment """Relation that associates a retail price with its special price counterpart. This is typically used for situations where retail and special pricing need to be placed side by side for easy comparison. """@en ;
+      owl:inverseOf oplofr:retailPriceSpecificationOf ;
+      rdfs:range gr:UnitPriceSpecification ;
+      rdfs:domain gr:UnitPriceSpecification .
+
+
+# <-------------- Bundle Offers --------------> #
+
+
+oplofr:BundleOffer a owl:Class ;
+      rdfs:subClassOf schema:Offer, schema:AggregateOffer;
+      rdfs:label "Bundle Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:BundleOfferSingleTier a owl:Class ;
+      rdfs:subClassOf oplofr:BundleOffer;
+      rdfs:label "UDA (Single-Tier Edition) Bundle Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:BundleOfferSingleTierLite a owl:Class ;
+      rdfs:subClassOf oplofr:BundleOffer;
+      rdfs:label "UDA (Single-Tier Lite Edition) Bundle Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:BundleOfferSingleTierExpress a owl:Class ;
+      rdfs:subClassOf oplofr:BundleOffer;
+      rdfs:label "UDA (Single-Tier Express Edition) Bundle Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:BundleOfferMultiTier a owl:Class ;
+      rdfs:subClassOf oplofr:BundleOffer;
+      rdfs:label "UDA (Multi-Tier Edition) Bundle Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+
+oplofr:Virtuoso8Offer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoOffer ;
+      rdfs:label "Virtuoso 8 Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso8SpecialOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoSpecialOffer ;
+      rdfs:comment "Virtuoso 8 Special Offer which contains two price specifications -- the Retail and Sale prices"@en ;
+      rdfs:label "Virtuoso 8 Special Offer"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso8ClientAccessOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoClientAccessOffer ;
+      rdfs:label "Virtuoso 8 Client Access Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso 8 Client Access Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso8SubscriptionOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoSubscriptionOffer ;
+      rdfs:label "Virtuoso 8 Subscription Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso 8 Subscription Offer"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso8BasicOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoBasicOffer ;
+      rdfs:label "Virtuoso 8 Basic Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso 8 Basic Offer which contains only one price specification -- the Retail price"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso8Pricing a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoPricing ;
+      rdfs:label "Virtuoso 8 Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso8RetailUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoRetailUnitPriceSpecification ;
+      rdfs:label "Virtuoso 8 Retail Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:Virtuoso8SpecialUnitPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoSpecialUnitPriceSpecification ;
+      rdfs:label "Virtuoso 8 Special Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
