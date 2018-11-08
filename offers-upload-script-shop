@@ -61,7 +61,7 @@ SPARQL define get:soft "no-sponge" LOAD <https://www.openlinksw.com/DAV/virtuoso
 
 -- Virtuoso 8.2 Special Offers, Licenses [Products], Price Specifications --
 
-SPARQL define get:soft "no-sponge" LOAD <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso82Offers.ttl> INTO <urn:opl:shop:offering:sponging:cache:official> .
+SPARQL define get:soft "no-sponge" LOAD <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso82Offers.ttl> INTO <urn:opl:shop:offering:sponging:cache:official> ;
 
 
 -- LOD Connectivity --
@@ -104,3 +104,5 @@ SPARQL define get:soft "no-sponge" LOAD <http://www.openlinksw.com/DAV/uda2.open
 
 SPARQL define get:soft "no-sponge" LOAD <http://www.openlinksw.com/DAV/uda2.openlinksw.com/data/turtle/single-tier/2016/UDASTProducts.ttl> INTO <urn:opl:shop:offering:sponging:cache:official> ;
 SPARQL define get:soft "no-sponge" LOAD <http://www.openlinksw.com/DAV/uda2.openlinksw.com/data/turtle/single-tier/2016/UDASTProductsReleases.ttl> INTO <urn:opl:shop:offering:sponging:cache:official> ;
+
+-- Troubleshooting and Cleanup ---
