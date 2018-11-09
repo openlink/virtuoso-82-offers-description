@@ -215,8 +215,8 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "199.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD" .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-personal-WKS-WIN> ;
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-WIN> ;
 	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "99.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -265,7 +265,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:name "Software License : Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
 	license:serialNumberBroadcast "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-personal-WKS-WIN#this> ;
+	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-WIN#this> ;
 	skos:prefLabel "Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems" ;
 	schema:comment " Virtuoso 8.2 Systems Integration  License (expiring, 2 cores, 4 threads)" .
 
@@ -825,8 +825,8 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "6186.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD" .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-LIN> ;
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN> ;
 	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -875,7 +875,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:name "Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
 	license:serialNumberBroadcast "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-LIN#this> ;
+	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this> ;
 	skos:prefLabel "Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
 	schema:comment " Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" .
 
@@ -947,8 +947,8 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "12374.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD" .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-WIN> ;
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN> ;
 	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -997,7 +997,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:name "Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
 	license:serialNumberBroadcast "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-WIN#this> ;
+	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> ;
 	skos:prefLabel "Virtuoso 8.2 Application Development License For Windows (Workstation) Operating Systems" ;
 	schema:comment " Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" .
 
