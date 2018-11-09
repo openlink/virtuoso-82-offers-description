@@ -17,7 +17,7 @@
 @prefix offers: 	 <http://www.openlinksw.com/ontology/offers#> .
 @prefix license: 	 <http://www.openlinksw.com/ontology/licenses#> .
 @prefix oplsof:   	 <http://www.openlinksw.com/ontology/software#>  .
-@prefix oplpro: 	 <http://www.openlinksw.com/ontology/products#>
+@prefix oplpro: 	 <http://www.openlinksw.com/ontology/products#> .
 @prefix :            <#> .
 @prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2018/Virtuoso-82-Special-Offers.ttl> .
 @prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2018/Virtuoso-82-Special-Offers.ttl> .
@@ -83,6 +83,14 @@ source: a schema:CreativeWork ;
 			<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> .
 ## Offers   
 
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix offers: <http://www.openlinksw.com/ontology/offers#> .
+@prefix oplpro: <http://www.openlinksw.com/ontology/products#> .
+@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
 
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-personal-WKS-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
@@ -817,7 +825,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "6186.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD" .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+<http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-LIN> ;
 	schema:validThrough "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2018-11-04T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
@@ -867,7 +875,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:name "Software License : Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
 	license:serialNumberBroadcast "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this> ;
+	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-10-virtuoso-8-systems-integration-WKSSVR-LIN#this> ;
 	skos:prefLabel "Virtuoso 8.2 Application Development License For Linux (Workstation) Operating Systems" ;
 	schema:comment " Virtuoso 8.2 Systems Integration  License (expiring, 8 cores, 10 threads)" .
 
