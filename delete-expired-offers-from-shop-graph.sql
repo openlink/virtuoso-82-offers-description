@@ -1,6 +1,8 @@
--- Remove Expired Offers
+-- Cleanup
+-- Remove Expired Offers using SPASQL (SPARQL relations operated on via SQL)
 
-SPARQL
+SELECT * 
+FROM ( SPARQL
 WITH <urn:opl:shop:offering:sponging:cache:official> 
 DELETE {?s ?p ?o}
 WHERE {
@@ -9,5 +11,4 @@ WHERE {
        FILTER (?valid < "2018-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>
               ) 
      
-      } 
-FOR UPDATE
+      } ) AS ObsoleteOffers FOR UPDATE
