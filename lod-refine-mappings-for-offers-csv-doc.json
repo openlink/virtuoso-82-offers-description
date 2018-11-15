@@ -505,7 +505,7 @@
                 "nodeType": "cell-as-resource",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Virtuoso 8.x Column Storage",
+                "columnName": "Virtuoso 8.2 Column Storage",
                 "rdfTypes": [],
                 "links": []
               }
@@ -792,7 +792,7 @@
         },
         {
           "nodeType": "resource",
-          "value": "https://virtuoso.openlinksw.com/offers/offers.vsp?version=8.2",
+          "value": "http://virtuoso.openlinksw.com/offers/offers.vsp",
           "rdfTypes": [
             {
               "uri": "http://schema.org/WebPage",
