@@ -52,7 +52,7 @@ source: a schema:CreativeWork ;
 				 <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-02d19573d65a31e02#this>,
 				 <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#>,
 				 <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this>,
-				 <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#> ;
+				 <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>, <https://hub.docker.com/r/openlink/virtuoso-closedsource-8#> ;
 				 ;
    sioc:has_container <.> ;
    sioc:sibling <Virtuoso8Products.ttl> ,
@@ -201,7 +201,9 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
   						  with particular focus on Digital Transformation to leverage Data Analytics, Data Virtualization, Data Flow, and Sophisticated 
 						  Data Security .
 					   """^^xsd:string ;
-  schema:mainEntityOfPage <http://virtuoso.openlinksw.com/> ;
+  schema:mainEntityOfPage <http://virtuoso.openlinksw.com/>, <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>,
+  						  <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#>, <https://hub.docker.com/r/openlink/virtuoso-closedsource-8#>,
+						   ;
   foaf:weblog <http://virtuoso.openlinksw.com/blog> ;
   oplfea:hasFeature <http://data.openlinksw.com/oplweb/product_feature/MultipleCSVAttachment#this>,
                     <http://data.openlinksw.com/oplweb/product_feature/EnhanceGeoSpatialOperations#this>,
@@ -226,13 +228,45 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
 				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> .
 								
 
+## Docker Container Page Description
+
+<https://hub.docker.com/r/openlink/virtuoso-closedsource-8#>
+a schema:WebPage ;
+rdfs:label "Virtuoso 8.2 Docker Container Description Document" ;
+schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this>, <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
+foaf:depiction <http://www.openlinksw.com/images/virtuoso-82-docker-container-1.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-2.png>,
+               <http://www.openlinksw.com/images/virtuoso-82-docker-container-3.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-4.png>,
+			   <http://www.openlinksw.com/images/virtuoso-82-docker-container-5.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-6.png> ;
+schema:url <http://hub.docker.com/r/openlink/virtuoso-closedsource-8/> ;
+dcterms:description """
+						One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance. This particular 
+						deployment requires a commercial license for fully functionality, by default it will operate if free-evaluation mode.
+			 		""" ;
+rdfs:comment  """
+				Following container instantiation, you can use docker container commands to start, monitor, and stop a Virtuoso instance 
+				for personal, enterprise, or service-specific use. 
+			  """;
+skos:related <http://dbpedia.org/resource/Category:Cloud_platforms>, 
+            <http://dbpedia.org/resource/Docker_(software)>,
+			<http://dbpedia.org/resource/Amazon_Web_Services>,
+			<http://data.openlinksw.com/oplweb/glossary-term/DBpedia#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/LODCloud#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/RDF#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
+			<http://data.openlinksw.com/oplweb/glossary-term/NoSQL#this>,
+			<http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+wdrs:describedby <> ;
+is schema:about of <> . 
+
+
 ## Virtuoso 8.2 PAGO Amazon Marketplace Page Description
 
 <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>
 a schema:WebPage ;
 rdfs:label "Virtuoso 8.2 PAGO Edition Description Document" ;
 schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this>, <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this> ;
-foaf:depiction <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
+foaf:depiction <http://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
 schema:url <https://aws.amazon.com/marketplace/pp/B011VMCZ8K/> ;
 dcterms:description """
 						One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance. This particular 
@@ -263,7 +297,7 @@ a oplami:AmazonEC2EBSBackedAMI, oplami:CloudHostedVirtualMachine ;
 skos:prefLabel "Virtuoso 8.2 Server (AWS Cloud PAGO Edition)" ;
 rdfs:label "Virtuoso 8.2 Server (AWS Cloud PAGO Edition)" ;
 schema:mainEntityOfPage <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>, <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtPayAsYouGoEBSBackedAMI> ;
-foaf:depiction <https://www.openlinksw.com/DAV/www2.openlinksw.com/images/virtuoso-82-pago-ami-init.png> ;
+foaf:depiction <http://www.openlinksw.com/DAV/www2.openlinksw.com/images/virtuoso-82-pago-ami-init.png> ;
 dcterms:description """
 						This AMI contains a pre-configured instance of a Virtuoso 8.2 Multi-Model RDBMS 
 						that includes a 10 DB Sessions and 8 CPU Affinity license. 
@@ -430,12 +464,12 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 ## 8.2 Features
 
 
-# Enhanced GeoSpatial Operations vis SQL/MM access via GeoSPARQL
+# Enhanced GeoSpatial Operations via SQL/MM access via GeoSPARQL
 
 <http://data.openlinksw.com/oplweb/product_feature/EnhanceGeoSpatialOperations#this>
 a oplfea:ProductFeature ;
 # owl:sameAs <http://virtuoso.openlinksw.com/news/virtuoso-8-press-release/#EnhancedRelationMapping> ;
-schema:name "Enhanced GeoSpatial Operations vis SQL/MM access via GeoSPARQL"^^xsd:string ;
+schema:name "Enhanced GeoSpatial Operations via SQL/MM access via GeoSPARQL"^^xsd:string ;
 benefit:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
 schema:description """Providing GeoSPARQL Query Language support as a tool for performing GeopSpatial operations that builds on existing
 					  support of SQL/MM. Net effect, a natural interaction interface for developers and end-users oriented towards knowledge
