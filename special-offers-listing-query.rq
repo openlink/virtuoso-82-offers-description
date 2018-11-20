@@ -1,0 +1,27 @@
+PREFIX schema: <http://schema.org/> 
+PREFIX opllic: <http://www.openlinksw.com/ontology/licenses#>
+PREFIX oplsoft: <http://www.openlinksw.com/ontology/software#>
+
+SELECT DISTINCT ?s1 as ?offer
+		       ?s2 as ?expiration
+		       ?s4 as ?price
+		       ?s6 as ?itemOffered
+		       ?s7 as ?concurrentClients
+		       ?s8 as ?supportedOS ?s10 as ?supportOSLabel
+		       ?s9 as ?image
+
+WHERE  {
+		  ?s1 a <http://www.openlinksw.com/ontology/offers#Virtuoso8Offer> .
+		  ?s1 schema:validThrough ?s2 .
+		  FILTER (?s2 >= "2018-12-31T23:59:59Z"^^xsd:dateTime) .
+		  ?s1 schema:priceSpecification ?s3 .
+		  ?s3 schema:price ?s4 .
+		  ?s3 schema:priceCurrency ?s5 .
+		  ?s1 schema:itemOffered ?s6 .
+		  ?s6 opllic:hasSessions ?s7 .
+		  ?s6 oplsoft:hasOperatingSystemFamily ?s8 .
+		  ?s1 schema:image ?s9 .  
+                  ?s8 schema:name ?s10 . 
+	  }
+
+ORDER BY ASC(?s4)
