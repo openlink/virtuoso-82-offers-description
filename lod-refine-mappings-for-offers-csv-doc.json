@@ -31,20 +31,861 @@
           "uri": "http://www.openlinksw.com/ontology/products#"
         },
         {
+          "name": "license",
+          "uri": "http://www.openlinksw.com/ontology/licenses#"
+        },
+        {
           "name": "gr",
           "uri": "http://purl.org/goodrelations/v1#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        },
+        {
+          "name": "oplsof",
+          "uri": "http://www.openlinksw.com/ontology/software#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replace(value,'2018-10-virtuoso-8','2018-11-virtuoso-82')",
+          "isRowNumberCell": false,
+          "columnName": "offer",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Offer",
+              "curie": "schema:Offer"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#Virtuoso8Offer",
+              "curie": "offers:Virtuoso8Offer"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#VirtuosoSpecialOffer",
+              "curie": "offers:VirtuosoSpecialOffer"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "replace(value,'#this','')",
+                "isRowNumberCell": false,
+                "columnName": "offer",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/validThrough",
+              "curie": "schema:validThrough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "validThrough"
+              }
+            },
+            {
+              "uri": "http://schema.org/validFrom",
+              "curie": "schema:validFrom",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "validFrom"
+              }
+            },
+            {
+              "uri": "http://schema.org/price",
+              "curie": "schema:price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "replace(value,',','')",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "special price \n(USD)"
+              }
+            },
+            {
+              "uri": "http://schema.org/priceSpecification",
+              "curie": "schema:priceSpecification",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "SpecialPriceSpecificationID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/itemOffered",
+              "curie": "schema:itemOffered",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "itemOffered",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/image",
+              "curie": "schema:image",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "image",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "curie": "skos:prefLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "prefLabel"
+              }
+            },
+            {
+              "uri": "http://schema.org/comment",
+              "curie": "schema:comment",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "comment"
+              }
+            },
+            {
+              "uri": "http://schema.org/category",
+              "curie": "schema:category",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "category"
+              }
+            },
+            {
+              "uri": "http://purl.org/goodrelations/v1#businessFunction",
+              "curie": "gr:businessFunction",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "businessFunction",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/description",
+              "curie": "schema:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "description"
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#offerNumber",
+              "curie": "offers:offerNumber",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "offer number"
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#isMemberOf",
+              "curie": "offers:isMemberOf",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "isMemberOf",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/name",
+              "curie": "schema:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "title"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#related",
+              "curie": "skos:related",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "related",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasBuyService",
+              "curie": "license:hasBuyService",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "hasBuyService",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/potentialAction",
+              "curie": "schema:potentialAction",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "potentialAction",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/mainEntityOfPage",
+              "curie": "schema:mainEntityOfPage",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-\"+value+\"%23this&type=buy&mode=v\"",
+                "isRowNumberCell": false,
+                "columnName": "offersBuyPage",
+                "rdfTypes": [],
+                "links": [
+                  {
+                    "uri": "http://schema.org/description",
+                    "curie": "schema:description",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "offersBuyPageLabel"
+                    }
+                  },
+                  {
+                    "uri": "http://schema.org/name",
+                    "curie": "schema:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "replace(value,\"REST-ful\",\"\")",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                      "columnName": "offersBuyPageLabel"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://schema.org/mainEntityOfPage",
+              "curie": "schema:mainEntityOfPage",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-\" + value +\"%23this\"",
+                "isRowNumberCell": false,
+                "columnName": "offersShopCartPage",
+                "rdfTypes": [],
+                "links": [
+                  {
+                    "uri": "http://schema.org/description",
+                    "curie": "schema:description",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "offersShopCartAddPage"
+                    }
+                  },
+                  {
+                    "uri": "http://schema.org/name",
+                    "curie": "schema:name",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "replace(value,\"REST-ful\",\"\")",
+                      "isRowNumberCell": false,
+                      "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                      "columnName": "offersShopCartAddPage"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "SpecialPriceSpecificationID",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/UnitPriceSpecification",
+              "curie": "schema:UnitPriceSpecification"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#Virtuoso8Pricing",
+              "curie": "offers:Virtuoso8Pricing"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#Virtuoso8SpecialPricing",
+              "curie": "offers:Virtuoso8SpecialPricing"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://schema.org/validFrom",
+              "curie": "schema:validFrom",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "validFrom"
+              }
+            },
+            {
+              "uri": "http://schema.org/validThrough",
+              "curie": "schema:validThrough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "validThrough"
+              }
+            },
+            {
+              "uri": "http://schema.org/name",
+              "curie": "schema:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "SpecialOfferPriceSpecificationTitle"
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#hasRetailPriceSpecification",
+              "curie": "offers:hasRetailPriceSpecification",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "RetailPriceSpecificationID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/price",
+              "curie": "schema:price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "replace(value,',','')",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "special price \n(USD)"
+              }
+            },
+            {
+              "uri": "http://schema.org/priceCurrency",
+              "curie": "schema:priceCurrency",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "currency"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "itemOffered",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/Product",
+              "curie": "schema:Product"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#ProductLicense",
+              "curie": "license:ProductLicense"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#Virtuoso8License",
+              "curie": "license:Virtuoso8License"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#ExpiringLicense",
+              "curie": "license:ExpiringLicense"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasSessions",
+              "curie": "license:hasSessions",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Concurrent Database Sessions"
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasMaximumProcessorCores",
+              "curie": "license:hasMaximumProcessorCores",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "CPU Affinity"
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#maxNetworkInstance",
+              "curie": "license:maxNetworkInstance",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Concurrent Clients Devices"
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/software#hasOperatingSystemType",
+              "curie": "oplsof:hasOperatingSystemType",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "OSclass",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasLicenseModule",
+              "curie": "license:hasLicenseModule",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Virtuoso 8.2 Column Storage",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasLicenseModule",
+              "curie": "license:hasLicenseModule",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Replication Module",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasLicenseModule",
+              "curie": "license:hasLicenseModule",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Attribute Based Access Controls Module",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasLicenseModule",
+              "curie": "license:hasLicenseModule",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Business Analytics Module",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasLicenseModule",
+              "curie": "license:hasLicenseModule",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Virtuoso Authentication Layer",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasLicenseModule",
+              "curie": "license:hasLicenseModule",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Virtual Database Module",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasLicenseModule",
+              "curie": "license:hasLicenseModule",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Virtuoso 8.x Custom Reasoning & Inference Rules Module",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#hasDuration",
+              "curie": "license:hasDuration",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Duration",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/software#hasOperatingSystemFamily",
+              "curie": "oplsof:hasOperatingSystemFamily",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "supportedOS",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/description",
+              "curie": "schema:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "description"
+              }
+            },
+            {
+              "uri": "http://schema.org/image",
+              "curie": "schema:image",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "image",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#productLicenseOf",
+              "curie": "license:productLicenseOf",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "licenseOf",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#durationDays",
+              "curie": "license:durationDays",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Duration Days"
+              }
+            },
+            {
+              "uri": "http://schema.org/name",
+              "curie": "schema:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "replace(value,'Offer','')",
+                "isRowNumberCell": false,
+                "columnName": "comment"
+              }
+            },
+            {
+              "uri": "http://schema.org/model",
+              "curie": "schema:model",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://data.openlinksw.com/oplweb/product/column-store-cl#this",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#serialNumberBroadcast",
+              "curie": "license:serialNumberBroadcast",
+              "target": {
+                "nodeType": "literal",
+                "value": "1",
+                "valueType": "http://www.w3.org/2001/XMLSchema#int"
+              }
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/licenses#partOf",
+              "curie": "license:partOf",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "offer",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "curie": "skos:prefLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "prefLabel"
+              }
+            },
+            {
+              "uri": "http://schema.org/comment",
+              "curie": "schema:comment",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "replace(replace(value,'Offer',''),'Software License :','')",
+                "isRowNumberCell": false,
+                "columnName": "comment"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "RetailPriceSpecificationID",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/UnitPriceSpecificiation",
+              "curie": "schema:UnitPriceSpecificiation"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#Virtuoso8Pricing",
+              "curie": "offers:Virtuoso8Pricing"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#Virtuoso8RetailPricing",
+              "curie": "offers:Virtuoso8RetailPricing"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://schema.org/validFrom",
+              "curie": "schema:validFrom",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "validFrom"
+              }
+            },
+            {
+              "uri": "http://schema.org/validThrough",
+              "curie": "schema:validThrough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "validThrough"
+              }
+            },
+            {
+              "uri": "http://schema.org/name",
+              "curie": "schema:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "RetailPriceSpecificationTitle"
+              }
+            },
+            {
+              "uri": "http://schema.org/price",
+              "curie": "schema:price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "replace(value,',','')",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "retail price \n(USD) \nforced .99"
+              }
+            },
+            {
+              "uri": "http://schema.org/priceCurrency",
+              "curie": "schema:priceCurrency",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "currency"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "resource",
+          "value": "http://virtuoso.openlinksw.com/offers/offers.vsp",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/WebPage",
+              "curie": "schema:WebPage"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://schema.org/offers",
+              "curie": "schema:offers",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "replace(value,'2018-10-virtuoso-8','2018-11-virtuoso-82')",
+                "isRowNumberCell": false,
+                "columnName": "offer",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/about",
+              "curie": "schema:about",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "replace(value,'2018-10-virtuoso-8','2018-11-virtuoso-82')",
+                "isRowNumberCell": false,
+                "columnName": "offer",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/name",
+              "curie": "schema:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "\"Virtuoso Current Offers Listing Page\"",
+                "isRowNumberCell": true,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string"
+              }
+            },
+            {
+              "uri": "http://schema.org/publisher",
+              "curie": "schema:publisher",
+              "target": {
+                "nodeType": "resource",
+                "value": "http://www.openlinksw.com/#this",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://data.openlinksw.com/oplweb/offer#",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "offers",
+          "uri": "http://www.openlinksw.com/ontology/offers#"
+        },
+        {
+          "name": "oplpro",
+          "uri": "http://www.openlinksw.com/ontology/products#"
         },
         {
           "name": "license",
           "uri": "http://www.openlinksw.com/ontology/licenses#"
         },
         {
-          "name": "oplsof",
-          "uri": "http://www.openlinksw.com/ontology/software#"
+          "name": "gr",
+          "uri": "http://purl.org/goodrelations/v1#"
         },
         {
           "name": "skos",
           "uri": "http://www.w3.org/2004/02/skos/core#"
+        },
+        {
+          "name": "oplsof",
+          "uri": "http://www.openlinksw.com/ontology/software#"
         }
       ],
       "rootNodes": [
@@ -1093,7 +1934,7 @@
                 "nodeType": "cell-as-resource",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "hasBuyService",
+                "columnName": "offersBuyPage",
                 "rdfTypes": [],
                 "links": []
               }
@@ -1105,7 +1946,7 @@
                 "nodeType": "cell-as-resource",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "potentialAction",
+                "columnName": "offersShopCartAddPage",
                 "rdfTypes": [],
                 "links": []
               }
@@ -2038,8 +2879,12 @@
               "curie": "offers:Virtuoso8Pricing"
             },
             {
-              "uri": "http://www.openlinksw.com/ontology/offers#Virtuoso8SpecialPricing",
-              "curie": "offers:Virtuoso8SpecialPricing"
+              "uri": "http://www.openlinksw.com/ontology/offers#Virtuoso8SpecialUnitPriceSpecification",
+              "curie": "offers:Virtuoso8SpecialUnitPriceSpecification"
+            },
+            {
+              "uri": "http://www.openlinksw.com/ontology/offers#SpecialUnitPriceSpecification",
+              "curie": "offers:SpecialUnitPriceSpecification"
             }
           ],
           "links": [
@@ -2411,8 +3256,8 @@
               "curie": "offers:Virtuoso8Pricing"
             },
             {
-              "uri": "http://www.openlinksw.com/ontology/offers#Virtuoso8RetailPricing",
-              "curie": "offers:Virtuoso8RetailPricing"
+              "uri": "http://www.openlinksw.com/ontology/offers#RetailPriceSpecification",
+              "curie": "offers:RetailPriceSpecification"
             }
           ],
           "links": [
